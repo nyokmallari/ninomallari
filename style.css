@@ -99,3 +99,9 @@ body {
 
 
 }
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 10rem;
+}
