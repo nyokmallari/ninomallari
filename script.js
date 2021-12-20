@@ -12,12 +12,12 @@ var content1 = document.getElementById("content1");
         var btn6 = document.getElementById("btn6");
         
         function openONE() {
-            content1.style.transform = "translateX(0)";
-            content2.style.transform = "translateX(10000%)";
-            content3.style.transform = "translateX(10000%)";
-            content4.style.transform = "translateX(10000%)";
-            content5.style.transform = "translateX(10000%)";
-            content6.style.transform = "translateX(10000%)";
+            content1.style.opacity = "1";
+            content2.style.opacity = "0";
+            content3.style.opacity = "0";
+            content4.style.opacity = "0";
+            content5.style.opacity = "0";
+            content6.style.opacity = "0";
             btn1.style.color = "#d30303";
             btn2.style.color = "#000";
             btn3.style.color = "#000";
@@ -33,12 +33,12 @@ var content1 = document.getElementById("content1");
         }
 
         function openTWO() {
-            content1.style.transform = "translateX(10000%)";
-            content2.style.transform = "translateX(0)";
-            content3.style.transform = "translateX(10000%)";
-            content4.style.transform = "translateX(10000%)";
-            content5.style.transform = "translateX(10000%)";
-            content6.style.transform = "translateX(10000%)";
+            content1.style.opacity = "0";
+            content2.style.opacity = "1";
+            content3.style.opacity = "0";
+            content4.style.opacity = "0";
+            content5.style.opacity = "0";
+            content6.style.opacity = "0";
             btn1.style.color = "#000";
             btn2.style.color = "#d30303";
             btn3.style.color = "#000";
@@ -54,12 +54,12 @@ var content1 = document.getElementById("content1");
         }
 
         function openTHREE() {
-            content1.style.transform = "translateX(10000%)";
-            content2.style.transform = "translateX(10000%)"
-            content3.style.transform = "translateX(0)";
-            content4.style.transform = "translateX(10000%)";
-            content5.style.transform = "translateX(10000%)";
-            content6.style.transform = "translateX(10000%)";
+            content1.style.opacity = "0";
+            content2.style.opacity = "0";
+            content3.style.opacity = "1";
+            content4.style.opacity = "0";
+            content5.style.opacity = "0";
+            content6.style.opacity = "0";
             btn1.style.color = "#000";
             btn2.style.color = "#000";
             btn3.style.color = "#d30303";
@@ -75,12 +75,12 @@ var content1 = document.getElementById("content1");
         }
 
         function openFOUR() {
-            content1.style.transform = "translateX(10000%)";
-            content2.style.transform = "translateX(10000%)"
-            content3.style.transform = "translateX(10000%)";
-            content4.style.transform = "translateX(0% )";
-            content5.style.transform = "translateX(10000%)";
-            content6.style.transform = "translateX(10000%)";
+            content1.style.opacity = "0";
+            content2.style.opacity = "0";
+            content3.style.opacity = "0";
+            content4.style.opacity = "1";
+            content5.style.opacity = "0";
+            content6.style.opacity = "0";
             btn1.style.color = "#000";
             btn2.style.color = "#000";
             btn3.style.color = "#000";
@@ -96,12 +96,12 @@ var content1 = document.getElementById("content1");
         }
 
         function openFIVE() {
-            content1.style.transform = "translateX(10000%)";
-            content2.style.transform = "translateX(10000%)"
-            content3.style.transform = "translateX(10000%)";
-            content4.style.transform = "translateX(10000% )";
-            content5.style.transform = "translateX(0% )";
-            content6.style.transform = "translateX(10000%)";
+            content1.style.opacity = "0";
+            content2.style.opacity = "0";
+            content3.style.opacity = "0";
+            content4.style.opacity = "0";
+            content5.style.opacity = "1";
+            content6.style.opacity = "0";
             btn1.style.color = "#000";
             btn2.style.color = "#000";
             btn3.style.color = "#000";
@@ -117,12 +117,12 @@ var content1 = document.getElementById("content1");
         }
 
         function openSIX() {
-            content1.style.transform = "translateX(10000%)";
-            content2.style.transform = "translateX(10000%)"
-            content3.style.transform = "translateX(10000%)";
-            content4.style.transform = "translateX(10000%)";
-            content5.style.transform = "translateX(10000%)";
-            content6.style.transform = "translateX(0%)";
+            content1.style.opacity = "0";
+            content2.style.opacity = "0";
+            content3.style.opacity = "0";
+            content4.style.opacity = "0";
+            content5.style.opacity = "0";
+            content6.style.opacity = "1";
             btn1.style.color = "#000";
             btn2.style.color = "#000";
             btn3.style.color = "#000";
