@@ -85,7 +85,6 @@
         top:0;
         justify-content: space-evenly;
         align-items: center;
-        padding: 0 1rem;
         position: absolute;
     }
     
@@ -98,15 +97,14 @@
     }
 
     .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 0 0 1rem 1rem;
-        position: absolute;
-        transform: translateX(1000%);
+        display: grid;
+        margin: 0 1rem;
         transition: 0.3s;
-        text-align: justify;
+        text-align: left;
     }
 
+    .inner {
+        margin: 1rem;
+        align-items: center;
+    }
 }
