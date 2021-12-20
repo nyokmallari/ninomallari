@@ -44,7 +44,7 @@ body {
 
 }
 
-.nav li {
+.nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,6 +77,13 @@ body {
     margin: 0 0 1rem 0;
 }
 
+.nav a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: var(--clr-gray400);
+    margin: 0 0 1rem 0;
+}
+
 .nav a :hover {
     color: var(--clr-gray500);
 }
@@ -99,6 +106,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 0.4rem;
+        padding-top: 1rem;
     }
     
     .nav a,p {
