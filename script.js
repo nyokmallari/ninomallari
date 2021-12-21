@@ -136,3 +136,15 @@ var content1 = document.getElementById("content1");
             content5.style.transitionDelay = "0s";
             content6.style.transitionDelay = "0.1s";
         }
+
+/*let number = document.getElementById("number");
+let counter = 0;
+setInterval(() => {
+    if (counter==80){
+        clearInterval();
+    }
+    else {
+    counter += 1;
+    number.innerHTML = counter + "%";
+    }
+}, 30); */
