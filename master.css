@@ -114,6 +114,7 @@
         flex-direction: row;
         position: absolute;
         padding-bottom: 2rem;
+        z-index: 1;
     }
 
     .content {
