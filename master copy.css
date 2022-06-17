@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+p {
+    padding: 1em 0;
+}
+
+.main {
+    background: linear-gradient(to right top, #1a759f, #34a0a4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5em 1.5em;
+    grid-gap: 1em;
+    height: 100vh;
+}   
+
+.glass {
+    min-height: 90vh;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.2));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    overflow: hidden;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top, rgba(255,255,255,0.4), rgba(255,255,255,0.2));
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.dashboard button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold; 
+    padding: 1.5rem 1rem 1.5rem 1rem ; 
+    border: 0;
+}
+
+.dashboard svg{
+    width: 2rem;
+    height: 2rem;
+    transition: all 200ms ease-in;
+    padding-bottom: 0.3rem;
+}
+
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: 0.3s;
+    margin: 1em;
+}
+
+.inner-content {
+    text-align: justify;
+}
+
+.card-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+}
+
+.card {
+    padding: 0.3em;
+    background: rgba(255,255,255, 0.2);
+    border-radius: 2em;
+}
+
+#content1 {
+    padding: 1rem;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#content2 {
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#content3 {
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#content4 {
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#content5 {
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#content6 { 
+    opacity: 0;
+    padding: 1rem;
+    
+}
+
+/* skill round progress */
+.skill1 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.skill1 h3 {
+    padding-top: 20px;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.5);
+}
+#number {
+    font-weight: 600;
+    color: #555;
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim1 2s linear forwards;
+}
+
+.skill1 svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* skill1 end */
+.skill2 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.skill2 h3 {
+    padding-top: 20px;
+}
+
+.skill2 .outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+
+.skill2 .inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.5);
+}
+.skill2 #number {
+    font-weight: 600;
+    color: #555;
+}
+
+.skill2 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+}
+
+.skill2 svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* skill2 end */
+
+.skill3 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.skill3 h3 {
+    padding-top: 20px;
+}
+
+.skill3 .outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+
+.skill3 .inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.5);
+}
+.skill3 #number {
+    font-weight: 600;
+    color: #555;
+}
+
+.skill3 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+}
+
+.skill3 svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* skill3 end */
+
+.skill4 {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.skill4 h3 {
+    padding-top: 20px;
+}
+
+.skill4 .outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+
+.skill4 .inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.5);
+}
+.skill4 #number {
+    font-weight: 600;
+    color: #555;
+}
+
+.skill4 circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim4 2s linear forwards;
+}
+
+.skill4 svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 472-472 * 0.percentage */
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 94;
+    }
+} 
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 118;
+    }
+} 
+@keyframes anim3 {
+    100% {
+        stroke-dashoffset: 188;
+    }
+} 
+@keyframes anim4 {
+    100% {
+        stroke-dashoffset: 142;
+    }
+} 
+
+/* FOR SMALLER DEVICES */
+@media screen and (max-width:550px){
+    .main {
+        min-height: 100vh;
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    } 
+
+    .glass {
+        background: linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.2));
+        min-height: 80vh;
+        width: 100%;
+        border-radius: 2rem;
+        z-index: 1;
+        backdrop-filter: blur(2rem);
+    }
+
+    .dashboard {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        background: linear-gradient(to right top, rgba(255,255,255,0.3), rgba(255,255,255,0.2));
+        border-radius: 1rem;
+        bottom: 20px;
+        position: absolute;
+        z-index: 1;
+    }
+    .dashboard button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: transparent;
+        outline: none;
+        cursor: pointer;
+        font-size: 0.5rem;
+        font-weight: bold; 
+        padding: 0.5rem;
+        border: 0;
+    }
+    
+    .dashboard svg{
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: all 200ms ease-in;
+        padding-bottom: 0.3rem;
+    }
+
+    .footer {
+        display: none;
+    }
+    
+    .content-area {
+        display: grid;        
+    }
+
+    .inner-content {
+        margin: 1rem;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.8em;
+    color:#081c15;
+    font-weight: 400;
+}
