@@ -14,6 +14,7 @@
             <button class="tablinks" onclick="openTab(event, 'home',)" id="default"><i class="fa-solid fa-house"></i> HOME</button>
             <button class="tablinks" onclick="openTab(event, 'profile',)"><i class="fa-solid fa-user-tie"></i> PROFILE</button>
             <button class="tablinks" onclick="openTab(event, 'gallery',)"><i class="fa-solid fa-images"></i> PORTFOLIO</button>
+            <button class="tablinks" onclick="openTab(event, 'videos',)"><i class="fa-solid fa-images"></i> VIDEOS</button>
             <button class="tablinks" onclick="openTab(event, 'content',)"><i class="fa-solid fa-envelope"></i> CONTACT</button>
         </div>
     
@@ -116,18 +117,18 @@
         <div id="gallery" class="tabcontent">
             <h3>GALLERY</h3>
             <div class="gallery-row">
-                <img src="images/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <img src="images/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                <img src="images/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"> 
-                <img src="images/4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                <img src="images/1.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                <img src="images/2.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-                <img src="images/3.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"> 
-                <img src="images/4.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="images/1.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
-                <img src="images/2.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
-                <img src="images/3.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow"> 
-                <img src="images/4.png" onclick="openModal();currentSlide(12)" class="hover-shadow">
+                <img src="https://picsum.photos/id/123/320/240" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="https://picsum.photos/id/202/320/240" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="https://picsum.photos/id/222/320/240" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="https://picsum.photos/id/512/320/240" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <img src="https://picsum.photos/id/325/320/240" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                <img src="https://picsum.photos/id/661/320/240" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                <img src="https://picsum.photos/id/901/320/240" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                <img src="https://picsum.photos/id/808/320/240" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="https://picsum.photos/id/232/320/240" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                <img src="https://picsum.photos/id/112/320/240" onclick="openModal();currentSlide(10)" class="hover-shadow">
+                <img src="https://picsum.photos/id/613/320/240" onclick="openModal();currentSlide(11)" class="hover-shadow">
+                <img src="https://picsum.photos/id/321/320/240" onclick="openModal();currentSlide(12)" class="hover-shadow">
             </div>
         </div>
         <div id="myModal" class="modal">
@@ -135,7 +136,7 @@
             <div class="modal-content">   
                 <div class="mySlides">
                     <div class="numbertext">1 / 8</div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3jwsU6Exu5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/3jwsU6Exu5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="mySlides">
                     <div class="numbertext">2 / 8</div>
@@ -214,6 +215,10 @@
                 </div> -->
             </div>
         </div>
+
+        <div id="videos" class="tabcontent">
+            <video src=""> </video>
+        </div>
     
         <div id="content" class="tabcontent">
             <div class="contact">
@@ -236,9 +241,6 @@
             <p>&copy NYOKFLICKS MULTIMEDIA | 2022</p>
         </div>
     </div>
-   
-    
-
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
 </body>

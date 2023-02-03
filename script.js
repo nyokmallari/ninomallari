@@ -39,6 +39,7 @@ const clickImg = (event)=>{
     modalImg.src=event.target.src;
 } */
 
+
 //Open Modal
 
 function openModal() {

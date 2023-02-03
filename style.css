@@ -19,7 +19,9 @@ body {
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
     padding: 2% 10%;
 }
 
@@ -54,7 +56,7 @@ hr {
 /* Tab Button Style */
 .tabMenu button {
     position: relative;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: transparent;
     border: none;
     border-radius: 20px 5px 0px 0px;
     cursor: pointer;
@@ -64,24 +66,27 @@ hr {
     font-weight: 700;
     width: 15%;
     margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Button on Hover */
 .tabMenu button:hover {
-    background-color: #ddd;
+    background-color: #ccc;
+    border-radius: 20px 5px 0px 0px;
 }
 
 /* Button Active State */
 .tabMenu button.active {
     color: rgba(255,255,255,0.8);
     background-color: rgba(255,255,255, 0.2);
+    border-radius: 20px 5px 0px 0px;
 }
 
 /* Content on Tabs */
 .tabcontent {
-    float: left;
     background-color: rgba(255, 255, 255, 0.2);
-    display: none;
+    display: flex;
     padding: 20px 20px;
     border-radius: 20px 0px 10px 10px;
     width: 100%;
@@ -121,7 +126,7 @@ hr {
 }
 
 .homeCol2 {
-    font-size: 1.5em;
+    font-size: 1em;
     float: left;
     width: 70%;
     padding: 10px;
@@ -130,8 +135,8 @@ hr {
 
 .avatar_front {
     vertical-align: middle;
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid #fff;
 }
@@ -266,18 +271,14 @@ span {
 /* GALLERY */
 
 .gallery-row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-basis: auto;
-    padding: px;
-    gap: 10px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 10px;
 }
 
 .gallery-row img{
     width: 100px;
+    cursor: pointer;
 }
 
 .gallery-row > .column {
@@ -323,8 +324,9 @@ span {
 } 
 
 .modal-content iframe {
+    padding-top: 50px;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
 
 }
 
@@ -418,7 +420,31 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+/* VIDEOS */
 
+.videos {
+    padding-top: 50px;
+    align-content:center;
+    text-align: center;
+    width: 100%;
+}
+
+.videos h1 {
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+.videos a {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.videos a:hover {
+    color: #c0c0c0;
+}
 
 /* CONTACT */
 
